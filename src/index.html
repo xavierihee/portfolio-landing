@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Xavier Ihee | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -15,22 +16,35 @@
 </head>
 
 <body>
+  <!-- Header Section -->
   <header>
-    <nav>
+    <div class="container">
+      <h1>Xavier Ihee</h1>
+      <p>Cloud Specialist | DevOps Enthusiast</p>
+    </div>
+  </header>
+
+  <!-- Navigation Section -->
+  <nav>
+    <div class="container">
       <ul>
         <li><a href="#about" aria-label="About">About</a></li>
         <li><a href="#projects" aria-label="Projects">Projects</a></li>
         <li><a href="#contact" aria-label="Contact">Contact</a></li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="hero">
-      <h1>Welcome to Xavier Ihee's Portfolio</h1>
-      <p>Discover my projects, skills, and professional journey. Let's connect and create something amazing together.</p>
-      <a href="#projects" class="btn">View My Projects</a>
-    </section>
-    <section id="about">
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Welcome to Xavier Ihee's Portfolio</h1>
+    <p>Discover my projects, skills, and professional journey. Let's connect and create something amazing together.</p>
+    <a href="#projects" class="btn">View My Projects</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
       <h2>About Me</h2>
       <p>Experienced cloud enthusiast with expertise in planning, designing, deploying, and managing enterprise cloud infrastructure. I excel in building and managing high-stakes environments, leveraging technologies such as Active Directory, Azure Active Directory, Azure Policies, Identity Access Management.
         Currently, I am honing my skills in Azure Cloud and DevOps, actively engaging in real-world projects to harness the capabilities of Microsoft Azure. I am dedicated to aiding organizations in their transition and modernization efforts, moving from on-premises setups to the Cloud.
@@ -40,43 +54,63 @@
         Building resilient and scalable infrastructures on Microsoft Azure.
         Streamlining cloud operations and optimizing costs through Azure services.
         My areas of expertise encompass Azure Cloud, DevOps, Azure Virtual Machines, Azure Blob Storage, Azure App Services, Azure Policies, Identity Access Management, Intune, Terraform, Ansible, and beyond.</p>
-    </section>
-    <section id="skills">
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
       <h2>Skills</h2>
       <p>Details about your skills.</p>
-    </section>
-    <section id="projects">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
       <h2>Projects</h2>
-      <p>Details about your projects.</p>
-    </section>
-    <section id="testimonials">
-      <h2>Testimonials</h2>
-      <p>Feedback from clients or colleagues.</p>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>How to get in touch with you.</p>
-    </section>
-  </main>
+      <div class="project">
+        <img src="https://via.placeholder.com/300" alt="Project 1">
+        <div class="project-info">
+          <h3>Project 1</h3>
+          <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/300" alt="Project 2">
+        <div class="project-info">
+          <h3>Project 2</h3>
+          <p>An e-commerce platform with a modern UI and back-end integration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="#">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Xavier Ihee. All rights reserved.</p>
-    <ul>
-      <li><a href="https://www.linkedin.com/in/xavierihee" target="_blank" aria-label="LinkedIn"><img src="linkedin-icon.png" alt="LinkedIn"></a></li>
-      <li><a href="https://www.twitter.com/xavierihee.dev" target="_blank" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter"></a></li>
-      <li><a href="https://www.youtube.com/xavierihee.dev" target="_blank" aria-label="YouTube"><img src="youtube-icon.png" alt="YouTube"></a></li>
-      <li><a href="https://www.tiktok.com/@xavierihee.dev" target="_blank" aria-label="TikTok"><img src="tiktok-icon.png" alt="TikTok"></a></li>
-    </ul>
+    <div class="container">
+      <p>&copy; 2025 Xavier Ihee. All rights reserved.</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/xavierihee" target="_blank" aria-label="LinkedIn"><img src="linkedin-icon.png" alt="LinkedIn"></a></li>
+        <li><a href="https://www.twitter.com/xavierihee.dev" target="_blank" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter"></a></li>
+        <li><a href="https://www.youtube.com/xavierihee.dev" target="_blank" aria-label="YouTube"><img src="youtube-icon.png" alt="YouTube"></a></li>
+        <li><a href="https://www.tiktok.com/@xavierihee.dev" target="_blank" aria-label="TikTok"><img src="tiktok-icon.png" alt="TikTok"></a></li>
+      </ul>
+    </div>
   </footer>
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
 </body>
 
 </html>
