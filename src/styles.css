@@ -9,8 +9,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #000; /* Black background */
+  color: #0f0; /* Dark green text */
 }
 
 .container {
@@ -20,8 +20,8 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #333;
-  color: white;
+  background-color: #000; /* Black background */
+  color: #0f0; /* Dark green text */
   padding: 40px 0;
   text-align: center;
 }
@@ -38,7 +38,7 @@ header p {
 
 /* Navigation Styles */
 nav {
-  background-color: #444;
+  background-color: #000; /* Black background */
   padding: 10px 0;
 }
 
@@ -53,7 +53,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #0f0; /* Dark green text */
   text-decoration: none;
   font-size: 1.1rem;
 }
@@ -72,7 +72,7 @@ main {
 #hero {
   text-align: center;
   padding: 2rem 0;
-  background-color: #e0e0e0;
+  background-color: #111; /* Slightly lighter black */
 }
 
 #hero h1 {
@@ -88,15 +88,15 @@ main {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   margin-top: 1rem;
-  background-color: #333;
-  color: #fff;
+  background-color: #0f0; /* Dark green background */
+  color: #000; /* Black text */
   text-decoration: none;
   border-radius: 4px;
   font-weight: bold;
 }
 
 .btn:hover {
-  background-color: #555;
+  background-color: #0a0; /* Darker green */
 }
 
 /* Section Styles */
@@ -166,7 +166,7 @@ section p {
 
 .project-info p {
   font-size: 1.1rem;
-  color: #666;
+  color: #0f0; /* Dark green text */
 }
 
 /* Contact Section */
@@ -191,15 +191,17 @@ section p {
 #contact input, #contact textarea {
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ccc;
+  border: 1px solid #0f0; /* Dark green border */
   border-radius: 5px;
   font-size: 1rem;
+  background-color: #111; /* Slightly lighter black */
+  color: #0f0; /* Dark green text */
 }
 
 #contact button {
   padding: 10px;
-  background-color: #333;
-  color: white;
+  background-color: #0f0; /* Dark green background */
+  color: #000; /* Black text */
   border: none;
   border-radius: 5px;
   font-size: 1.1rem;
@@ -207,13 +209,13 @@ section p {
 }
 
 #contact button:hover {
-  background-color: #555;
+  background-color: #0a0; /* Darker green */
 }
 
 /* Footer Styles */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #000; /* Black background */
+  color: #0f0; /* Dark green text */
   padding: 20px 0;
   text-align: center;
 }
