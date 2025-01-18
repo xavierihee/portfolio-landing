@@ -5,8 +5,7 @@
   box-sizing: border-box;
 }
 
-/* styles.css */
-
+/* Body and basic styles */
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
@@ -69,14 +68,6 @@ main {
   margin: 0 auto;
 }
 
-section {
-  margin-bottom: 2rem;
-}
-
-h1, h2 {
-  color: #333;
-}
-
 /* Hero Section */
 #hero {
   text-align: center;
@@ -108,37 +99,31 @@ h1, h2 {
   background-color: #555;
 }
 
-/* About Section */
-#about {
-  background-color: #fff;
+/* Section Styles */
+section {
   padding: 60px 0;
-  text-align: center;
 }
 
-#about h2 {
+section:nth-child(odd) .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
+section:nth-child(even) .container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: right;
+}
+
+section h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-#about p {
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Skills Section */
-#skills {
-  background-color: #fff;
-  padding: 60px 0;
-  text-align: center;
-}
-
-#skills h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-#skills p {
+section p {
   font-size: 1.1rem;
   max-width: 800px;
   margin: 0 auto;
@@ -292,6 +277,12 @@ footer ul li a img {
 
   .project-info {
     padding-left: 0;
+    text-align: center;
+  }
+
+  section:nth-child(odd) .container,
+  section:nth-child(even) .container {
+    flex-direction: column;
     text-align: center;
   }
 }
